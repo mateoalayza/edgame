@@ -1,0 +1,257 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2044c32af4c178b4e977038d1c3534b4, type: 3}
+  m_Name: New Dialog Graph
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 9022832552503660441}
+  - {fileID: 247404826770735542}
+  - {fileID: 6753794613778930519}
+--- !u!114 &247404826770735542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850366e69f434b0fa4013153c9bb5305, type: 3}
+  m_Name: dialogg
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -360, y: -1256}
+  ports:
+    keys:
+    - input
+    - Answers 0
+    - Answers 1
+    - Answers
+    values:
+    - _fieldName: input
+      _node: {fileID: 247404826770735542}
+      _typeQualifiedName: Tutorials.DialogSystem.Scripts.Connection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Answers 0
+        node: {fileID: 9022832552503660441}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Answers 0
+      _node: {fileID: 247404826770735542}
+      _typeQualifiedName: Tutorials.DialogSystem.Scripts.DialogAnswer, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: Answers 1
+      _node: {fileID: 247404826770735542}
+      _typeQualifiedName: Tutorials.DialogSystem.Scripts.DialogAnswer, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: Answers
+      _node: {fileID: 247404826770735542}
+      _typeQualifiedName: System.Collections.Generic.List`1[[Tutorials.DialogSystem.Scripts.DialogAnswer,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  DialogText: "Al guardarlo mi compa\xF1ero me susurra en el o\xEDdo: vamos \xE1brelo
+    y dibuja algo tambi\xE9n\n"
+  Images: []
+  Answers:
+  - answerText: asdsasd
+    activateFeedback: 0
+    feedback: 
+  - answerText: asds
+    activateFeedback: 0
+    feedback: 
+  NodeColor: {r: 0.003921569, g: 0.5294118, b: 0.5254902, a: 1}
+--- !u!114 &6753794613778930519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850366e69f434b0fa4013153c9bb5305, type: 3}
+  m_Name: Dialog Segment
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -344, y: -200}
+  ports:
+    keys:
+    - input
+    - Answers
+    - Answers 0
+    values:
+    - _fieldName: input
+      _node: {fileID: 6753794613778930519}
+      _typeQualifiedName: Tutorials.DialogSystem.Scripts.Connection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Answers 1
+        node: {fileID: 9022832552503660441}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Answers
+      _node: {fileID: 6753794613778930519}
+      _typeQualifiedName: System.Collections.Generic.List`1[[Tutorials.DialogSystem.Scripts.DialogAnswer,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Answers 0
+      _node: {fileID: 6753794613778930519}
+      _typeQualifiedName: Tutorials.DialogSystem.Scripts.DialogAnswer, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  DialogText: 'prueba
+
+'
+  Images: []
+  Answers:
+  - answerText: sdasdssds
+    activateFeedback: 0
+    feedback: 
+  NodeColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!114 &9022832552503660441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850366e69f434b0fa4013153c9bb5305, type: 3}
+  m_Name: prueba 1
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1384, y: -664}
+  ports:
+    keys:
+    - input
+    - Answers
+    - Answers 0
+    - Answers 1
+    - AnswerText 0
+    - AnswerText 1
+    - Answers - Conectar 0
+    values:
+    - _fieldName: input
+      _node: {fileID: 9022832552503660441}
+      _typeQualifiedName: Tutorials.DialogSystem.Scripts.Connection, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Answers
+      _node: {fileID: 9022832552503660441}
+      _typeQualifiedName: System.Collections.Generic.List`1[[Tutorials.DialogSystem.Scripts.DialogAnswer,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Answers 0
+      _node: {fileID: 9022832552503660441}
+      _typeQualifiedName: Tutorials.DialogSystem.Scripts.DialogAnswer, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 247404826770735542}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: Answers 1
+      _node: {fileID: 9022832552503660441}
+      _typeQualifiedName: Tutorials.DialogSystem.Scripts.DialogAnswer, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 6753794613778930519}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: AnswerText 0
+      _node: {fileID: 9022832552503660441}
+      _typeQualifiedName: Tutorials.DialogSystem.Scripts.DialogAnswer, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: AnswerText 1
+      _node: {fileID: 9022832552503660441}
+      _typeQualifiedName: Tutorials.DialogSystem.Scripts.DialogAnswer, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: Answers - Conectar 0
+      _node: {fileID: 9022832552503660441}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+  DialogText: "En mi clase de matem\xE1ticas, un compa\xF1ero me para un papel doblado. 
+    Mientras extiende la mano logro ver que tiene un dibujo con algunas inscripciones"
+  Images:
+  - {fileID: 2800000, guid: 9c0a88d4187408140897b45b4e7e0c99, type: 3}
+  - {fileID: 2800000, guid: a336b6d8bcab6e940a218eaee48868e9, type: 3}
+  Answers:
+  - answerText: asdasasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+    activateFeedback: 1
+    feedback: sdsd
+  - answerText: ddd
+    activateFeedback: 0
+    feedback: 
+  NodeColor: {r: 0.16078432, g: 0.16078432, b: 0.16078432, a: 1}
