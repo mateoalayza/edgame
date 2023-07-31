@@ -497,3 +497,27 @@ Received Import Request.
 Start importing Assets/Test.asset using Guid(1561800a699859a44ad95ffcb30294c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af27db234eff65eba7ba16fc9384774d') in 0.008833 seconds 
   Import took 0.012171 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 2738.115086 seconds.
+  path: Assets/Test.asset
+  artifactKey: Guid(8ec97bc275ca413408c6bb7ce4e2d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test.asset using Guid(8ec97bc275ca413408c6bb7ce4e2d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdbb6be5246e5306547e6dfeec7167bc') in 0.032770 seconds 
+  Import took 0.056538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 130.763720 seconds.
+  path: Assets/Tutorials/DialogSystem/New Dialog Graph 1.asset
+  artifactKey: Guid(496cfa3bfa114af47bd1e017773dde3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tutorials/DialogSystem/New Dialog Graph 1.asset using Guid(496cfa3bfa114af47bd1e017773dde3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c30ff23256b5a6e2462af2bf6d8cb39f') in 0.247868 seconds 
+  Import took 0.251244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.157481 seconds.
+  path: Assets/Test.asset
+  artifactKey: Guid(496cfa3bfa114af47bd1e017773dde3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test.asset using Guid(496cfa3bfa114af47bd1e017773dde3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '460b4b5150c4d512606946c260a4506e') in 0.017764 seconds 
+  Import took 0.021242 seconds .
+
