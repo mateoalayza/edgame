@@ -107,6 +107,7 @@ MonoBehaviour:
     - input
     - Answers
     - Answers 0
+    - Answers 1
     values:
     - _fieldName: input
       _node: {fileID: 6753794613778930519}
@@ -139,12 +140,22 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
-  DialogText: 'prueba
-
-'
+    - _fieldName: Answers 1
+      _node: {fileID: 6753794613778930519}
+      _typeQualifiedName: Tutorials.DialogSystem.Scripts.DialogAnswer, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  DialogText: es mejor que no compres esa pistola
   Images: []
   Answers:
-  - answerText: sdasdssds sda
+  - answerText: si la quiero
+    activateFeedback: 0
+    feedback: 
+  - answerText: no quiero
     activateFeedback: 0
     feedback: 
   NodeColor: {r: 0, g: 0, b: 0, a: 1}

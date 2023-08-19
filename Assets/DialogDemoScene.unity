@@ -1110,7 +1110,7 @@ MonoBehaviour:
     Mientras extiende la mano logro ver que tiene un dibujo con algunas inscripciones"
   text_obj: {fileID: 1207894683}
   word: {fileID: 1582291398}
-  timeb: 0.08
+  timeb: 0.01
   but: {fileID: 651675408}
   but_parent: {fileID: 669254908}
   objectsToBounce: []
