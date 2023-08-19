@@ -1106,7 +1106,7 @@ MonoBehaviour:
   rectTransform: {fileID: 1582291394}
   targetWidth: 1602
   animationDuration: 1
-  texto: "En mi clase de matem\xE1ticas, un compa\xF1eero me para un papel doblado. 
+  texto: "En mi clase de matem\xE1ticas, un compa\xF1eero me para un papessl doblado. 
     Mientras extiende la mano logro ver que tiene un dibujo con algunas inscripciones"
   text_obj: {fileID: 1207894683}
   word: {fileID: 1582291398}
