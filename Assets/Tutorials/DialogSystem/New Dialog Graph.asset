@@ -144,7 +144,7 @@ MonoBehaviour:
 '
   Images: []
   Answers:
-  - answerText: sdasdssds sd
+  - answerText: sdasdssds sda
     activateFeedback: 0
     feedback: 
   NodeColor: {r: 0, g: 0, b: 0, a: 1}
